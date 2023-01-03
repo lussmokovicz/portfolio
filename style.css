@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right top, #1d9cda, #007bbe, #005aa1, #003b82, #041d62);
+    overflow-x: hidden;
+}
+header{
+    background-color: #1f1f1f;
+    height: 100px;
+    box-shadow: 0px 0px 20px #111113c0;
+}
+main{
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 8px;
+    background-color: #f3f3f3;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 10px 10px 30px #201f1f4d;
+}
+footer{
+    background-color: #111113;
+    height: 100px;
+    display: flex;
+}
+footer > p{
+    color: white;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+}
+footer a:hover{
+    text-decoration: underline;
+    background-color: #041d62;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px #1d9cda;
+    transition-duration: 0.5s;
+
+}
