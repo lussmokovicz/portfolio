@@ -13,7 +13,7 @@
 html, body{
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(to right top, #1d9cda, #007bbe, #005aa1, #003b82, #041d62);
+    background: linear-gradient(to right top, #1d9cda, #007bbe, #005aa1, #003b82, #041d62) fixed no-repeat;
     overflow-x: hidden;
 }
 header{
