@@ -78,7 +78,7 @@ section.projetos{
     margin: auto;
     display: grid;
 }
-.projetos .grid-pro div{
+.projetos div{
     background-color: #111113;
     border-radius: 10px;
     margin: auto;
@@ -86,7 +86,7 @@ section.projetos{
     height: 100px;
     transition: all 0.5s ease;
 }
-.projetos .grid-pro div:hover{
+.projetos div:hover{
     box-shadow: 1px 2px 10px #000000;
     transform: translateY(-2px);
 
@@ -111,10 +111,6 @@ footer a{
 }
 footer a:hover{
     text-decoration: underline;
-    background-color: #041d62;
-    border-radius: 5px;
-    box-shadow: 0px 0px 6px #1d9cda;
-    transition-duration: 0.5s;
 }
 @media screen and (min-width:600px) {
     section.habilidades{
@@ -143,33 +139,21 @@ footer a:hover{
         margin-inline: auto;
         padding: 10px 0px;
         width: 100vw;
+        height: 100vh;
         display: grid;
         gap: 1.5em;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     section.projetos div{
         padding: 10px;
+        width: 300px;
+        height: 250px;
         border-radius: 10px;
         background-color: #111113;
         transition: all 0.5s ease;
         color: white;
     }
     
-    .projetos  .first{
-        grid-column: span 2; 
-        margin-left: 10px;
-    }
-    .projetos .third{
-        grid-row: span 2;
-        margin-right: 30px;
-    }
-    .projetos .fourth{
-        margin-left: 10px;
-    }
-    .projetos .fifth{
-        grid-column: span 2;
-        
-    } 
     .projetos div:hover{
         box-shadow: 1px 2px 10px #000000;
         transform: translateY(-2px);
