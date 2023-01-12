@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body{
+    background-color:#E2E2E5;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+main{
+    background-color: red;
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+section#login{
+    background-color: yellow;
+    width: 400px;
+    height: 350px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+section#sign{
+    display: none;
+    background-color: yellow;
+    width: 400px;
+    height: 350px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+div.color{
+    background-color: blue;
+    display: block;
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px 4px 6px #00000033;
+    transform: translateY(-10px);
+}
+div.form h1{
+    background-color: green;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+form{
+    background-color: purple;
+}
+label{
+    display: none;
+}
+div.campo{
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+}
+input[type=email], input[type=password], input[type=text], input[type=text]{
+    background-color: #ceffff;
+    border-radius: 5px;
+    padding: 8px;
+    width: 70%;
+    height: 40px;
+    border: transparent;
+    font-family: 'Open Sans';
+    font-weight: 100;
+}
+input[type=submit]{
+    display: block;
+    margin: auto;
+    border: transparent;
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+form > a{
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+    font-size: 0.8em;
+    width: 100%;
+
+
+}

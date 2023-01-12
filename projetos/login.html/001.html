@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style001.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div class="color"></div>
+            <div class="form">
+                <h1>Login</h1>
+            </div>
+            <form action="login.php" method="post">
+                <div class="campo">
+                    <label for="iemail">E-mail</label>
+                    <input type="email" name="email" id="iemail" placeholder="E-mail*">
+                </div>
+                <div class="campo">
+                    <label for="ipass">Password</label>
+                    <input type="password" name="pass" id="ipass" placeholder="Password*">
+                </div>
+                <input type="submit" value="Submit">
+                <a href="#">Forgot password?</a>
+            </form>
+
+        </section>
+        <section id="sign">
+            <div class="color"></div>
+            <div class="form">
+                <h1>Sign up</h1>
+            </div>
+            <form action="sign.php" method="post">
+                <div class="campo">
+                    <label for="iname">Name</label>
+                    <input type="text" name="name" id="iname">
+                </div>
+                <div class="campo">
+                    <label for="isurname">Surname</label>
+                    <input type="text" name="surname" id="isurname">
+                </div>
+                <div class="campo">
+                    <label for="ibirth">Birth date</label>
+                    <input type="date" name="birth" id="ibirth">
+                </div>
+                <div class="campo">
+                    <label for="iemail">E-mail</label>
+                    <input type="email" name="email" id="iemail">
+                </div>
+                <div class="campo">
+                    <label for="iconfemail">Confirm</label>
+                    <input type="email" name="confemail" id="iconfemail">
+                </div>
+                <div class="campo">
+                    <label for="ipass">Create a password</label>
+                    <input type="password" name="pass" id="ipass">
+                </div>
+                <div class="campo">
+                    <label for="iconfpass">Confirm</label>
+                    <input type="password" name="confpass" id="iconfpass">
+                </div>
+                <input type="submit" value="Send">
+            </form>
+
+        </section>
+    </main>
+    
+</body>
+</html>
