@@ -7,37 +7,66 @@
     box-sizing: border-box;
 }
 html, body{
-    background-color:#E2E2E5;
+    background-color:#364021;
     font-family: 'Open Sans', sans-serif;
     height: 100vh;
     width: 100vw;
     position: relative;
 }
-main{
-    background-color: red;
+div.option{
+    border-radius: 8px;
+    text-align: center;
+    display: block;
+    width: 50vw;
+    margin: auto;
     position: absolute;
-    width: 600px;
+    padding: 4px 0px 4px 0px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+div.option > input{
+    color: white;
+    background-color: #212122;
+    border: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    width: 20vw;
+    text-transform: uppercase;
+}
+div.option > input:hover{
+    box-shadow: 0px 0px 10px #ffffff8e;
+    transform-origin: box-shadow;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+main{
+    background-color: #0D0D0D;
+    box-shadow: 0px 0px 20px #0d0d0d4f;
+    border-radius: 8px;
+    position: absolute;
+    width: 500px;
     height: 500px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 section#login{
-    background-color: yellow;
+    background-color: #E9F2A0;
     width: 400px;
-    height: 350px;
+    height: 360px;
     border-radius: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
     display: block;
 }
 section#sign{
     display: none;
     background-color: yellow;
     width: 400px;
-    height: 350px;
+    height: 370px;
     border-radius: 20px;
     position: absolute;
     top: 50%;
@@ -45,50 +74,63 @@ section#sign{
     transform: translate(-50%, -50%);
 }
 div.color{
-    background-color: blue;
+    background-color: #B3BF56;
     display: block;
-    padding: 20px;
+    padding: 25px;
+    border-bottom: 2px solid #364021;
     border-radius: 20px 20px 0px 0px;
-    box-shadow: 0px 4px 6px #00000033;
+    box-shadow: 0px 4px 8px #00000033;
     transform: translateY(-10px);
 }
 div.form h1{
-    background-color: green;
     text-align: center;
-    padding: 10px;
+    font-size: 2em;
+    padding: 8px;
+    margin-bottom: 8px;
     text-transform: uppercase;
     font-weight: 300;
-}
-form{
-    background-color: purple;
 }
 label{
     display: none;
 }
 div.campo{
-    background-color: aqua;
     padding: 10px;
     text-align: center;
 }
-input[type=email], input[type=password], input[type=text], input[type=text]{
-    background-color: #ceffff;
+input[type=email], input[type=password]{
     border-radius: 5px;
     padding: 8px;
     width: 70%;
     height: 40px;
     border: transparent;
+    border-bottom: 2px solid #c2d894;
     font-family: 'Open Sans';
     font-weight: 100;
+    transition-duration: 0.5s;
+}
+input[type=email]:hover, input[type=password]:hover{
+    border-bottom: 2px solid #364021;
+    background-color: #f6fada;
+}
+input:focus{
+    outline: none;
 }
 input[type=submit]{
+    background-color: #B3BF56;
     display: block;
     margin: auto;
+    margin-top: 10px;
     border: transparent;
     width: 50%;
     height: 40px;
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: lighter;
+    transition-duration: 0.2s;
+}
+input[type=submit]:hover{
+    border-bottom: 2px solid #364021;
+    box-shadow: 0px 4px 8px #00000033;
 }
 form > a{
     display: block;
@@ -99,6 +141,7 @@ form > a{
     text-decoration: none;
     font-size: 0.8em;
     width: 100%;
-
-
+}
+form > a:hover{
+    text-decoration: underline;
 }

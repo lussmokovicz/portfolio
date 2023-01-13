@@ -9,8 +9,12 @@
 </head>
 <body>
     <main>
+        <div class="option">
+            <input type="button" value="Login"> <input type="button" value="Sign up">
+        </div>
         <section id="login">
-            <div class="color"></div>
+            <div class="color">
+            </div>
             <div class="form">
                 <h1>Login</h1>
             </div>
@@ -35,32 +39,16 @@
             </div>
             <form action="sign.php" method="post">
                 <div class="campo">
-                    <label for="iname">Name</label>
-                    <input type="text" name="name" id="iname">
-                </div>
-                <div class="campo">
-                    <label for="isurname">Surname</label>
-                    <input type="text" name="surname" id="isurname">
-                </div>
-                <div class="campo">
-                    <label for="ibirth">Birth date</label>
-                    <input type="date" name="birth" id="ibirth">
-                </div>
-                <div class="campo">
                     <label for="iemail">E-mail</label>
-                    <input type="email" name="email" id="iemail">
-                </div>
-                <div class="campo">
-                    <label for="iconfemail">Confirm</label>
-                    <input type="email" name="confemail" id="iconfemail">
+                    <input type="email" name="email" id="iemail" placeholder="E-mail*">
                 </div>
                 <div class="campo">
                     <label for="ipass">Create a password</label>
-                    <input type="password" name="pass" id="ipass">
+                    <input type="password" name="pass" id="ipass" placeholder="Create password*">
                 </div>
                 <div class="campo">
                     <label for="iconfpass">Confirm</label>
-                    <input type="password" name="confpass" id="iconfpass">
+                    <input type="password" name="confpass" id="iconfpass"placeholder="Confirm password*">
                 </div>
                 <input type="submit" value="Send">
             </form>
