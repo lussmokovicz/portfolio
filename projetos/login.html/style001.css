@@ -61,6 +61,14 @@ div.color h3:hover{
     color: white;
     background-color: #002947;
 }
+section > div.grad{
+    margin: auto;
+    width: 100%;
+    height: 6px;
+    border-bottom: 2px black;
+    background-image: linear-gradient(to right, #71c5ee, #53a7d8, #3889c1, #1e6caa, #025091);
+    transform: translateY(-15px);
+}
 div.form h1{
     text-align: center;
     font-size: 2em;
@@ -130,4 +138,9 @@ form > a{
 }
 form > a:hover{
     text-decoration: underline;
+}
+
+@media screen and (min-width:400px) {
+    
+    
 }
